@@ -1,0 +1,7 @@
+# ninja log v5
+1	79	6708903030628379	CMakeFiles/TAKUZU.dir/main.c.obj	d6f160adb91c1fbf
+11	80	6708903030628379	CMakeFiles/TAKUZU.dir/takuzuu.c.obj	8e80ca57c6fec02a
+80	186	6708903031668611	TAKUZU.exe	2eefd2a94ab86fac
+1	81	6709758690619237	CMakeFiles/TAKUZU.dir/main.c.obj	e9583d7cdba334a6
+13	81	6709758690619237	CMakeFiles/TAKUZU.dir/takuzuu.c.obj	771ada4d476389df
+82	227	6709758692039559	TAKUZU.exe	2eefd2a94ab86fac
