@@ -5,20 +5,6 @@ int main() {
     int var;
     int choix;
     int taille=0;
-    int tab[max4x4][max4x4]={{0,1,1,0},{1,0,0,1},
-                             {0,0,1,1},{1,1,0,0}};
-    int tableau[max8x8][max8x8]= {{0,0,1,1,0,1,0,1},
-                                  {0,1,1,0,1,0,1,1},
-                                  {0,0,1,0,1,0,1,0},
-                                  {1,0,1,1,0,1,1,0},
-                                  {1,0,0,1,0,1,0,1},
-                                  {1,0,1,1,0,0,1,0},
-                                  {0,1,0,1,0,1,1,0},
-                                  {0,1,0,1,0,0,1,0}};
-    int masque[max4x4][max4x4]={{0,0,1,1},
-                                {0,1,1,0},
-                                {0,1,0,1},
-                                {0,0,0,1}};
     do {
         printf("Bienvenue dans le menu, choisissez l'option que vous souhaitez: \n");
         printf("1) Resoudre la grille\n");
@@ -44,6 +30,7 @@ int main() {
             }
             case 2:
             {
+
                 if(taille==0)
                 {
                     taille=choisir_taille();
@@ -59,9 +46,23 @@ int main() {
                 }
                 creer_masque_manu(M,taille);
             }
+            case 3:
+            {
+                if(taille==0)
+                {
+                    taille=choisir_taille();
+                }
+                int **M = (int**) malloc(taille * sizeof(int*));
+                for (int i = 0; i < taille; i++) {
+                    M[i] = malloc(taille * sizeof(int));
+                }
+                grilleauto(M,taille);
+                afficher_grille(M,taille);
+                break;
+            }
+
+            default:printf("numéro invalide");
         }
     }
-    printf("SUUUU\n");
-    afficher_grille(&tab,4);
     return 0;
 }

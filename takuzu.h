@@ -9,12 +9,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "takuzu.h"
+#include "time.h"
 
 
-void solution4x4(int tableau[max4x4][max4x4] );
-void solution8x8(int tableau[max8x8][max8x8] );
 void afficher_grille(int** tableau,int n);
 void creer_masque_manu(int** Masque,int n);
 int choisir_taille();
+void grilleauto(int** tableau,int n);
 
 #endif //TAKUZU_TAKUZU_H

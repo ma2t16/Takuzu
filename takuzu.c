@@ -68,3 +68,15 @@ int choisir_taille()
     }
     return 8;
 }
+
+void grilleauto(int** tableau,int n)
+{
+    time_t t;
+    srand((unsigned) time(&t));
+    int i,j;
+    for (i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+            *(*(tableau+i)+j)=rand()%2;
+    }
+}
